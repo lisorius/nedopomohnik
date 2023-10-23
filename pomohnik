@@ -1,0 +1,77 @@
+import random
+def calculator():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Enter the operation (+, -, *, /): ")
+
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        return num1 / num2
+    else:
+        return "Invalid operation"
+def guess_number():
+    number = random.randint(1, 100) # загадываем число от 1 до 100
+    attempts = 0 # счетчик попыток
+    while True:
+        guess = int(input("guess the number from 1 to 100: "))
+        attempts += 1
+        if guess < number:
+            print("Загаданное число больше")
+        elif guess > number:
+            print("The hidden number is greater")
+        else:
+            print(f"Congratulations! You guessed the number {number} behind {attempts} attempts.")
+            break
+
+
+print("Hello, how can I help?")
+print('I have a built-in calculator, basic dialogue and play a game. To activate the calculator, enter calculator if you want to chat, enter dialogue if you want to play an input game')
+b = input('enter which function you want to use\n')
+if b == 'calculator':
+    result = calculator()
+    print(result)
+    print('enter which function you want to use')
+    if g == 'calculator':
+        result = calculator()
+        print(result)
+    elif g == 'dialogue':
+        print('Hello, want a joke?')
+        h = input('enter yes or no\n')
+        if с == 'Yes':
+            print('-My friend keeps a hamster in a jar\n-Well, whats wrong with that?\n-Well, just imagine: Brine, cucumbers, tomatoes and a hamster!')
+            print('Were sorry, but this is the only joke in this code. Select another function')
+    elif g == 'No':
+        print('Were sorry, but this is the only joke in this code. Select another function')
+    elif g == 'play':
+        guess_number()
+    print('The number of times the bot has been used is over')
+elif b == 'dialogue':
+    print('Hello, want a joke?')
+    с = input('enter yes or no\n')
+    if с == 'Yes':
+        print('-My friend keeps a hamster in a jar\n-Well, whats wrong with that?\n-Well, just imagine: Brine, cucumbers, tomatoes and a hamster!')
+        print('Were sorry, but this is the only joke in this code. Select another function')
+    elif c == 'No': print('Were sorry, but this is the only joke in this code. Select another function')
+    d = input('enter which function you want to use\n')
+    if d == 'calculator':
+        result = calculator()
+        print(result)
+    elif d == 'dialogue':
+        print('Hello, want a joke?')
+        v = input('enter yes or no\n')
+        if v == 'Yes':
+            print('-My friend keeps a hamster in a jar\n-Well, whats wrong with that?\n-Well, just imagine: Brine, cucumbers, tomatoes and a hamster!')
+            print('Were sorry, but this is the only joke in this code. Select another function')
+        elif v == 'No':
+            print('Were sorry, but this is the only joke in this code. Select another function')
+        elif l == 'play':
+            guess_number()
+        print('The number of times the bot has been used is over')
+elif b == 'play':
+    guess_number()
+print('The number of times the bot has been used is over')
