@@ -1,3 +1,4 @@
+#The bot has errors in the form of unused variables
 import random
 def calculator():
     num1 = float(input("Enter the first number: "))
@@ -15,7 +16,7 @@ def calculator():
     else:
         return "Invalid operation"
 def guess_number():
-    number = random.randint(1, 100) # загадываем число от 1 до 100
+    number = random.randint(1, 100) # guess a number from 1 to 100
     attempts = 0 # счетчик попыток
     while True:
         guess = int(input("guess the number from 1 to 100: "))
